@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+ 
+</head>
+<body>
+<img src="" id="imgId" alt="" />
+<input type="file" id="file" name="myfile" accept="image/x-png, image/jpg, image/jpeg, image/gif"/>
+<input type="button" id="upBtn"   value="上传" />
+ 
+<script type="text/javascript" src="../js/jquery.2.1.1.js">
+	
+</script>
+<script src="myPlugin.js"></script>
+<script>
+	$('#upBtn').myCompress({
+		imgId:'imgId',//显示压缩后图片的id
+		fileId:"file",//file的id
+		upladBtn:"upBtn",//上传按钮的id
+		quality:"0.1",//quality值越小，所绘制出的图像越模糊
+		url:"http://www.baidu.com"//上传地址
+	})
+</script>
+</body>
+</html>
